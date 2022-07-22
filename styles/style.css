@@ -6,3 +6,254 @@ Green: #00B172
 White: #FFF
 
 */
+
+html,
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 7rem;;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+.nav-bar {
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;/*aquí puede que falte posicionar en x el logo y las opciones*/
+        align-items: center;
+}
+.logo-top {
+    width: 10rem;
+}
+
+.selection-top-sub {
+    width: 100%/*50rem*/;
+    display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+}
+
+.selection-top-sub li {
+    font-size: 1.3rem;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.landing {
+    background-image: url("/images/landing.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+    width: 100%;
+    height: 100rem;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.landing h1 {
+    margin: 1.5rem;
+}
+
+.landing p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.middle {
+    margin: 0;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+}
+
+.central-title {
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 4px solid #00B172;
+}
+
+.blocks {
+    padding: 0rem;
+    margin: 0 0 3rem 0;
+    width: 80%;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+.blocks h3 {
+    color: #00B172;
+}
+
+.blocks p {
+    width: 10rem;
+}
+
+.block-unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-unit p {
+    margin: 0;
+}
+
+.logos-experience {
+    height: 7rem;
+}
+
+footer {
+    background-color: #00B172;
+    margin: 0 2rem 0 2rem;
+    height: 60rem;
+    position: relative;
+}
+
+.two-columns {
+    padding: 5rem;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.kanye {
+    height: 45rem;
+}
+
+.kanye img {
+    padding-top: 7rem;
+    height: 100%;
+}
+
+.motives {
+    color: white;
+    height: 50rem;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+}
+
+.motives h2 {
+    padding-bottom: 0.2rem;
+    border-bottom: 4px solid white;
+}
+
+.motives p {
+    font-size: 1.5rem;
+}
+
+.central-logo {
+    position: absolute;
+    bottom: 47%;
+    left: 47%;
+}
+
+.central-logo img {
+    height: 10rem;
+}
+
+@media (max-width: 768px) {
+
+    .landing {
+        background-image: url("/images/landing.jpg");
+        background-repeat: none;
+        background-position: center;
+        background-size: cover;
+        color: #FFF;
+        width: 100%;
+        height: 50rem;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .landing h1 {
+        text-align: center;
+        margin: 1.5rem;
+    }
+
+    .blocks {
+        padding: 0rem;
+        margin: 0 0 3rem 0;
+        width: 80%;
+        display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+    }
+
+.central-title {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-bottom: 4px solid #00B172;
+}
+
+    .blocks h3 {
+        color: #00B172;
+        margin: 0.8rem;
+    }
+
+    .block-unit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .two-columns {
+        padding: 5rem;
+        display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    }
+
+    .motives h2 {
+        padding-bottom: 0.2rem;
+        border-bottom: 4px solid white;
+    }
+
+    .motives p {
+        font-size: 1.5rem;
+        width: 30rem;
+    }
+
+    .central-logo {
+        position: absolute;
+        top: 1.5%;
+        left: 50%;
+    }
+    
+    .central-logo img {
+        height: 5rem;
+    }
+
+    .kanye img {
+        padding-top: 5rem;
+        height: 51rem;
+    }
+}
